@@ -1,0 +1,9 @@
+- date_format ||= "%A"
+- date = photo.title.split(' ')
+- date = Time.utc(date.last, months_index_to_french_month(date[1]), date.first)
+.float_left.pic
+  a href="#photo_#{photo.id}" class="sublime"
+    img class="everyday" src=photo.url(:square) title=photo.title
+  img src=photo.url title=photo.title id="photo_#{photo.id}" style="display:none"
+  br
+  = date.strftime(date_format)

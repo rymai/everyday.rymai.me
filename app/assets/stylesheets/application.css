@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html {min-height:100%;}
+
+body {
+  font-family:museo-1,museo-2,serif;
+  font-style:normal;
+  font-weight:500;
+  font-size:14px;
+  color:#333;
+  min-height:100%;
+  background:#DDD url('polaroid.png') repeat fixed;
+  text-rendering:optimizeLegibility; /*HUGELY IMPORTANT*/
+}
+
+h1, h1 a, h1 a:visited {
+  width:960px;
+  color:#333;
+  font-size:62px;
+  letter-spacing:-1px;
+  line-height:51px;
+  padding-bottom:30px;
+  text-shadow:#000 0 1px 0;
+  text-decoration:none;
+  margin:20px auto;
+}
+
+#main_wrap {
+  width:960px;
+  margin:20px auto;
+  padding:0 20px;
+}
+
+#content h2 {
+  font-weight:100;
+  font-size:46px;
+  letter-spacing:-1px;
+  margin-top:50px;
+}
+
+#content h3 {
+  font-weight:100;
+  font-size:26px;
+  letter-spacing:-1px;
+  margin-top:40px;
+}
+
+img.everyday {
+  border:4px solid #e9eada;
+  border-bottom:16px solid #e9eada;
+  margin:auto;
+  -webkit-box-shadow:rgba(0,0,0,0.45) 0 3px 12px, inset 0 2px 1px rgba(255,255,255,0.8);
+  -moz-box-shadow:rgba(0,0,0,0.45) 0 3px 12px, inset 0 1px 2px rgba(255,255,255,0.8);
+  box-shadow:rgba(0,0,0,0.45) 0 3px 12px, inset 0 1px 2px rgba(255,255,255,0.8);
+}
+
+#content p {
+  line-height:16px;
+  margin-bottom:5px;
+}
+
+.pic {
+  margin-right:15px;
+}
+
+.float_left {
+  float:left;
+  text-align:center;
+}
+
+.break_line {
+  clear:both;
+  margin:20px;
+/*  border-top:1px solid rgba(0,0,0,0.2);
+  border-bottom:1px solid rgba(255,255,255,0.5);
+*/}

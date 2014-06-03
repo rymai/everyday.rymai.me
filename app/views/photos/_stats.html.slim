@@ -1,0 +1,8 @@
+h3 Some stats...
+
+ul
+  li= "The set contains #{everyday_photoset.size} photos, that's #{fraction_of_a_year(everyday_photoset.size)} year!"
+  li= "I've spent #{time_spent_taking_pictures(everyday_photoset.size)} taking pictures of myself!"
+  li= "I skipped #{everyday_photoset.skipped_photos_count_since(Time.utc(2011, 4, 9))} days since #{Time.utc(2011, 4, 9).strftime("%B %e, %Y")}!"
+
+/ p= link_to "> View the whole set on Flickr", "http://www.flickr.com/photos/trekstar/sets/#{everyday_photoset.id}"

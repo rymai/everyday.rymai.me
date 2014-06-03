@@ -1,0 +1,5 @@
+h2= "The week of #{first_day_of_last_week.strftime("%B %e, %Y")}"
+
+- days_back = today_index.zero? ? 7 : today_index
+- everyday_photoset.photos.slice(-(days_back + 7)..-(days_back + 1)).each do |photo|
+  = render "photo", photo: photo

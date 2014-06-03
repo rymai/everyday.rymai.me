@@ -1,0 +1,19 @@
+doctype 5
+html
+  head
+    title Everyday rymai
+    = stylesheet_link_tag "application"
+    link href="ios_icon.png" rel="apple-touch-icon"
+    link href="favicon.ico" rel="shortcut icon" type="image/x-icon"
+    = javascript_include_tag '//use.typekit.com/pih1cyo.js'
+    = javascript_tag 'try{Typekit.load();}catch(e){};'
+    = javascript_include_tag '//cdn.sublimevideo.net/js/k0n20xhx-beta.js'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body
+    h1= link_to "Everyday rymai", "/"
+
+    #main_wrap
+      #content= yield
+
+    = render 'layouts/tracking_code'

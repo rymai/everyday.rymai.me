@@ -1,0 +1,5 @@
+aws_access_key_id:     'YOUR AWS ACCESS KEY ID HERE'
+aws_secret_access_key: 'YOUR AWS SECRET ACCESS KEY HERE'
+bucket:                'bucket name where to backup your everyday pics from flickr'
+prefix:                'path in which to save your backuped pics (must end with a "/")'
+local_dir:             'local dir in which to dowdnload your pics when running FlickrAPI.download_from_s3 (relative to Rails.root)'
